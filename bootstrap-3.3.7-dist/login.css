@@ -1,0 +1,182 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.log{
+  width: 100%;
+  height: auto;
+}
+.login{
+    width: 300px;
+    padding:30px 25px;
+    background: #c4c4c4;
+    border:1px solid #c4c4c4;
+    margin-left: 375px;
+    margin-top: 260px;
+    border:none;
+    border-radius: 5px;
+}
+.login-title{
+    margin:-30px -25px 25px;
+    padding:15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight:300;
+    color: #737373;
+    text-align: center;
+    background:#f7f7f7;
+    border-radius: 5px;
+}
+.login-input:focus{
+    border-color: #6e8095;
+    outline: none;
+}
+.login-button{
+    width: calc(50% - 15px);
+    float: left;
+    height: 50px;
+    padding:0;
+    font-size:20px;
+    color: #737373;
+    text-align: center;
+    background:#f2f2f2;
+    border:0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 7.5px;
+}
+.ml-15{
+    margin-left: 15px;
+    padding-top: 15px;
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#f2f2f2;
+    padding-top: 50px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: none;
+    border-radius: 5px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    color:#737373;
+    border:none;
+}
+h1{
+  margin-bottom: 15px;
+}
+p{
+  margin-bottom:10px;
+}
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #cccccc;
+    outline: none;
+}
+.cancelbtn {
+    padding: 13px 20px;
+    background-color: #f2f2f2;
+    border:none;
+    border-radius: 5px;
+    margin-top: 15px;
+    color:#737373;
+}
+.signupbtn {
+    padding: 13px 20px;
+    background-color: #f2f2f2;
+    border:none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left:15px;
+    color: #737373;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 49%;
+}
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+.login-lost{
+    text-align: center;
+    margin-top: 30px;
+}
+.login-lost a{
+    color:#f2f2f2;
+    text-decoration: none;
+    font-size:13px;
+}
+/* Set a style for all buttons */
+#sign {
+    width: calc(50% - 15px);
+    height: 50px;
+    padding: 0;
+    font-size:20px;
+    color: white;
+    text-align:center;
+    background:#f2f2f2;
+    border:0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 135px;
+}
+#sign:hover {
+    opacity:1;
+}

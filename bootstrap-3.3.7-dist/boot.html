@@ -1,0 +1,167 @@
+<html>
+<head>
+  <title>Boo</title>
+  <link rel="stylesheet" type="text/css" href="absurd.css">
+</head>
+ <body>
+    <div class="header">
+          <div class="btn-group">
+            <a href="login.html"><button class="button">Login</button></a>
+            <button class="button">Contact</button>
+            <button class="button">Blog</button>
+            <button class="button">Promotion</button>
+            <button class="button">Pages</button>
+            <button class="button">Shop</button>
+          </div>
+          <p style="clear:both"></p>
+      <a href="boot.html">
+        <img id="queen" src="crown.png">
+      </a>
+          <h3 id="bitqueen">Bitqueen</h3>
+    </div>
+    <div class="body">
+      <div class="image">
+          <img id="artist4" src="artist4.jpg">
+            <div class="text">
+              <h2 style="font-size: 2.5vw;">MAKEUP MAKE YOU UP</h2>
+              <h1 style="font-size: 2.5vw;">Get up to 25% Off on this Summer!</h1>
+            </div>
+              <button class="shop" type="vertical-align:middle" onclick="alert('Coming Soon')">
+                <span>SHOP NOW</span>
+              </button>
+      </div>
+    <div class="box">
+      <div class="wrapper-photo" style="background-image: url('artist7.jpg')">
+        <div class="centered-middle">
+          <button class="tombol1" type="vertical-align:middle" onclick="alert('Coming Soon')">MEN'S</button>
+        </div>
+      </div>
+      <div class="wrapper-photo" style="background-image: url('artist6.jpg')">
+        <div class="centered-middle">
+          <button class="tombol1 blue" type="vertical-align:middle" onclick="alert('Coming Soon')">ACCESSORIES'S
+          </button>
+        </div>
+      </div>
+      <div class="wrapper-photo" style="background-image: url('artist5.jpg')">
+        <div class="centered-middle">
+          <button class="tombol1" type="vertical-align:middle" onclick="alert('Coming Soon')">WOMEN'S</button>
+        </div>
+      </div>
+    </div>
+    <br>
+        <center><h1 class="title-arrival">NEW Arrivals</h1></center>
+      <div class="wrapper2" style="background-image: url('product_1.png')">
+        <div class="centered-middle">      
+          <div class="middle">
+            <div class="text-shop"><b>Shop</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_2.png')">
+        <div class="centered-middle">      
+          <div class="middle">
+            <div class="text-shop"><b>Shop</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_3.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_4.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_5.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_6.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_7.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_8.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <div class="wrapper2" style="background-image: url('product_9.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+        </div>
+      <div class="wrapper2" style="background-image: url('product_10.png')">
+        <div class="centered-middle"></div>
+          <div class="centered-middle">      
+            <div class="middle">
+              <div class="text-shop"><b>Shop</b></div>
+            </div>
+          </div>
+      </div>
+      <img id="countdown" src="artist4.jpg">
+          <div class="box-time">
+            <div class="days">Day</div>
+            <div class="hours"></div>
+            <div class="minutes"></div>
+            <div class="seconds"></div>
+          </div>
+        </div>
+      <div class="waktu">
+        <style>
+          p {
+            font-size:60px;
+            margin-top:-440px;
+            margin-left:65px;
+        }
+        </style>
+        <p id=time></p>
+      <script>
+        var countDownDate = new Date('Sep 8, 2018 15:00:00').getTime();
+          var x = setInterval(function(){
+          var now = new Date().getTime();
+          var distance = countDownDate - now;
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) /1000);
+          document.getElementById("time").innerHTML = days + "<br>" + hours + "<br>" + minutes + "<br>" + seconds + "<br>";
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("time").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+      </div>
+      <div class="footer"></div>
+  </body>
+</html>

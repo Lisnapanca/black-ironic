@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<title>SIGNUP</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ff80aa;
+    outline: none;
+}
+.login{
+    width: 300px;
+    padding:30px 25px;
+    background: #c4c4c4;
+    border:1px solid #c4c4c4;
+    margin-left: 375px;
+    margin-top: 260px;
+    border:none;
+    border-radius: 5px;
+}
+h1.login-title{
+    margin:-30px -25px 25px;
+    padding:15px 25px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight:300;
+    color: #ff80aa;
+    text-align: center;
+    background:#f7f7f7;
+    border-radius: 5px;
+}
+.login-input:focus{
+    border-color: #6e8095;
+    outline: none;
+}
+.login-button{
+    width: calc(50% - 15px);
+    float: left;
+    height: 50px;
+    padding:0;
+    font-size:20px;
+    color: white;
+    text-align: center;
+    background:#ff80aa;
+    border:0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+}
+.ml-15{
+    margin-left: 15px;
+    padding-top: 15px;
+}
+.login-lost{
+    text-align: center;
+    margin-top: 30px;
+}
+.login-lost a{
+    color:#ff80aa;
+    text-decoration: none;
+    font-size:13px;
+}
+/* Set a style for all buttons */
+#sign {
+    width: calc(50% - 15px);
+    height: 50px;
+    padding: 0;
+    font-size:20px;
+    color: white;
+    text-align:center;
+    background:#ff80aa;
+    border:0;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 135px;
+}
+
+#sign:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 13px 20px;
+    background-color: #ff80aa;
+    border:none;
+    border-radius: 5px;
+    margin-top: 15px;
+    color:white;
+}
+.signupbtn {
+    padding: 13px 20px;
+    background-color: #ff80aa;
+    border:none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left:15px;
+    color: white;
+}
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 49%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+    color:#ff80aa;
+    border:none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#ff80aa;
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+<div class="log" style=" width: 100%; height: auto;">
+        <form class="login" name="login">
+            <b><h1 class="login-title">Login</h1></b>
+            <input type="text" name="userid" class="login-input"placeholder="Username" autofocus>
+            <input type="password" name="pswrd" class="login-input"placeholder="Password">
+            <input type="submit" onclick="check(this.form)" value="Login" class="login-button" style="margin-left: 7.5px;">
+            <div class="login-button ml-15" onclick="document.getElementById('id01').style.display='block'">Sign Up</div>
+            <div class="clearfix"></div>
+        </form>
+</div>
+    <script>
+        function check(form){
+            if (form.userid.value == "bit" && form.pswrd.value == "queen") {
+                window.open('boot.html')
+            }
+            else{
+                alert('Username or Password incorrect ')
+            }
+        }
+    </script>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" style="border:none; border-radius: 5px;" action="file:///home/studio/Documents/bitqueen/simply/bootstrap-3.3.7-dist/boot.html">
+    <div class="container">
+      <h1 style="margin-bottom: 15px;">Sign Up</h1>
+      <p style="margin-bottom: 10px;">Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn" action="file:///home/studio/Documents/bitqueen/simply/bootstrap-3.3.7-dist/percobaan.html">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
